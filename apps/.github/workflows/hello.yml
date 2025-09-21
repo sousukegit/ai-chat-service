@@ -1,9 +1,6 @@
 name: Hello
 
-on:
-  push:
-    branches:
-      - main
+on: push
 
 jobs:
   hello:

@@ -1,0 +1,31 @@
+{
+  "name": "diary-chat-db",
+  "version": "1.0.0",
+  "description": "DynamoDB setup and management for diary-chat application",
+  "main": "setup-tables.js",
+  "scripts": {
+    "setup": "node setup-tables.js",
+    "setup:reset": "node setup-tables.js --reset --with-sample-data",
+    "setup:clean": "node setup-tables.js --reset",
+    "setup:sample": "node setup-tables.js --with-sample-data",
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "admin": "echo 'DynamoDB Admin UI: http://localhost:8001'"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.470.0",
+    "@aws-sdk/lib-dynamodb": "^3.470.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "dynamodb",
+    "aws",
+    "database",
+    "chat",
+    "local-development"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
